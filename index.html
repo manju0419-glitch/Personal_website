@@ -490,7 +490,7 @@ footer{ border-top:1px solid var(--border); padding:56px 0 32px; }
         </div>
       </div>
       <div class="about-side glass reveal">
-        <div class="row"><span>ROLE</span><span>Aspiring Backend Developer</span></div>
+        <div class="row"><span>ROLE</span><span> Backend Developer</span></div>
         <div class="row"><span>EDUCATION</span><span>B.E. Information Science, Year 2</span></div>
         <div class="row"><span>FOCUS</span><span>Backend, APIs, DSA</span></div>
         <div class="row"><span>LOCATION</span><span>Bengaluru, India</span></div>
@@ -843,6 +843,16 @@ const projectsData = [
     desc:"A clean, fast bookmark manager to save, tag, and organize links, built to practice CRUD flows and local persistence.",
     tech:["HTML","CSS","JavaScript"],
     features:["Add / edit / delete bookmarks","Tag-based organization & search","Persistent storage between sessions"],
+    github:"https://github.com/manju0419-glitch/Bookmarks",
+  },
+  {
+    title:"AI Study Assistant",status:"completed",statusLabel:"Completed",
+    grad:"linear-gradient(135deg,#4a2b2b,#2b4a2b)",tag:"PYTHON / AI",
+    desc:"A Python-based AI assistant that helps students summarize and organize study materials using AI like features.",
+    tech:["Python","HTML","CSS","JavaScript",],
+    features:["Text summarization","Keyword extraction","Study material organization"],
+    github:"https://github.com/manju0419-glitch/AI-study-app",
+    demo:"https://graceful-sundae-dbc0c1.netlify.app/",
   },
   {
     title:"Prim's Algorithm Visualizer", status:"completed", statusLabel:"Completed",
@@ -850,6 +860,8 @@ const projectsData = [
     desc:"A Java implementation of Prim's Algorithm for minimum spanning trees, applied to an electricity distribution network optimization problem.",
     tech:["Java","Data Structures","Graph Theory"],
     features:["MST generation from weighted graphs","Step-by-step traversal logging","Applied to real network-cost optimization"],
+    github:"https://github.com/manjunath0419-glitch/PrimsAlgorithm",
+    demo:"https://primsalgo.netlify.app/",
   },
   {
     title:"Backend API Platform", status:"planned", statusLabel:"Planned",
@@ -858,6 +870,22 @@ const projectsData = [
     tech:["Django","REST APIs","PostgreSQL"],
     features:["JWT-based authentication","Modeled relational schema","OpenAPI documentation"],
   },
+  {
+    title:"Socionet — Social Media Clone", status:"completed", statusLabel:"Completed",
+    grad:"linear-gradient(135deg,#4a2b5f,#2b4a5f)", tag:"DJANGO / REACT",
+    desc:"A full-stack social media application inspired by Instagram, built with Django REST Framework and React.",
+    tech:["Django REST","React","PostgreSQL","Docker"],
+    features:["User authentication & profiles","Post creation, likes, and comments","Responsive design for mobile & desktop"],
+    demo:"https://socionet-final.netlify.app/",
+  },
+  {
+    title:"Shopping Cart System",status:"completed",statusLabel:"Completed",
+    grad:"linear-gradient(135deg,#5a2b4a,#2b5a4a)",tag:"JAVA / SPRING",
+    desc:"A backend shopping cart system buillt with Java and Spring Boot, focusing on RESTful API design and database integration.",
+    tech:["Java","Spring Boot","MySQL","Tomcat"],
+    features:["Product catalog management","User cart and checkout flow","Order history tracking"],
+    github:"https://github.com/manju0419-glitch/Shoppingcart",
+  },   
 ];
 const projectsGrid = document.getElementById('projectsGrid');
 function renderProjects(filter){
@@ -877,8 +905,8 @@ function renderProjects(filter){
         <div class="tech-row">${p.tech.map(t=>`<span class="tech-chip">${t}</span>`).join('')}</div>
         <ul class="feature-list">${p.features.map(f=>`<li>${f}</li>`).join('')}</ul>
         <div class="project-actions">
-          <a href="#" class="btn btn-ghost btn-sm" style="flex:1;">GitHub</a>
-          <a href="#" class="btn btn-primary btn-sm" style="flex:1;">Live Demo</a>
+          <a href="${p.github}" class="btn btn-ghost btn-sm" style="flex:1;" target="_blank">GitHub</a>
+          <a href="${p.demo}" class="btn btn-primary btn-sm" style="flex:1;" target="_blank">Live Demo</a>
         </div>
       </div>
     `;
