@@ -437,14 +437,16 @@ footer{ border-top:1px solid var(--border); padding:56px 0 32px; }
       <div class="type-line reveal in"><span id="typeTarget"></span><span class="cursor-blink"></span></div>
       <p class="lead reveal in">Second-year Information Science Engineering student focused on backend development and distributed systems. I like turning algorithms — graphs, trees, optimization — into real, working software, and I'm currently deep in Django, REST APIs, and data structures.</p>
       <div class="hero-ctas reveal in">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#projects" class="btn btn-ghost">View Projects</a>
         <a href="Manjunath_Resume.pdf" download class="btn btn-ghost">Download Resume</a>
         <a href="mailto:manjunath0419@gmail.com" class="btn btn-ghost">Contact Me</a>
+        <a href="#certifications" class="btn btn-ghost">Certifications</a>
       </div>
       <div class="hero-stats reveal in">
-        <div class="stat"><b class="counter" data-target="4">0</b><span>PROJECTS SHIPPED</span></div>
-        <div class="stat"><b class="counter" data-target="10">0</b><span>TECHNOLOGIES</span></div>
-        <div class="stat"><b class="counter" data-target="2">0</b><span>YEARS OF CSE</span></div>
+        <div class="stat"><b class="counter" data-target="5">0</b><span>PROJECTS SHIPPED</span></div>
+        <div class="stat"><b class="counter" data-target="11">0</b><span>TECHNOLOGIES</span></div>
+        <div class="stat"><b class="counter" data-target="2">0</b><span>YEARS OF ISE</span></div>
+        <div class="stat"><b class="counter" data-target="4">0</b><span>CERTIFICATES</span></div>
       </div>
     </div>
     <div class="avatar-wrap">
@@ -602,7 +604,7 @@ footer{ border-top:1px solid var(--border); padding:56px 0 32px; }
           <p>UPDATED JULY 2026 · 1 PAGE</p>
         </div>
       </div>
-      <a href="#" class="btn btn-primary" id="resumeBtn">
+      <a href="Manjunath_Resume.pdf" download class="btn btn-primary" id="resumeBtn">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
         Download Resume
       </a>
@@ -654,6 +656,7 @@ footer{ border-top:1px solid var(--border); padding:56px 0 32px; }
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
           <li><a href="mailto:manjunath0419@gmail.com">Contact</a></li>
         </ul>
       </div>
@@ -925,11 +928,9 @@ document.querySelectorAll('.skill-tab[data-pf]').forEach(tab=>{
 
 /* ---------------- Timeline data ---------------- */
 const timelineData = [
-  {date:"2024 — Present", tag:"EDUCATION", title:"B.E. Information Science Engineering", desc:"Second-year student, building a foundation in data structures, algorithms, and systems programming."},
-  {date:"2025", tag:"PROJECT", title:"Electricity Distribution Network Optimizer", desc:"Implemented Prim's Algorithm in Java to model and minimize network connection cost."},
-  {date:"2025", tag:"PROJECT", title:"Socionet — Social Media Clone", desc:"Built an Instagram-style app with Django REST Framework, React, PostgreSQL, and Docker."},
+  {date:"2024 — Present", tag:"EDUCATION", title:"B.E. Information Science Engineering", desc:"Second-year student, building a foundation in data structures, algorithms, and backend programming."},
   {date:"2025 — Ongoing", tag:"LEARNING", title:"Backend Development Deep Dive", desc:"Studying Django, REST APIs, and database design through hands-on projects."},
-  {date:"Upcoming", tag:"GOAL", title:"Internship / Certification", desc:"Actively seeking a backend development internship and relevant certifications."},
+  {date:"Upcoming", tag:"GOAL", title:"Internship", desc:"Actively seeking a backend development internship and relevant certifications."},
 ];
 const timeline = document.getElementById('timeline');
 timelineData.forEach(t=>{
