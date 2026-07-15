@@ -438,7 +438,7 @@ footer{ border-top:1px solid var(--border); padding:56px 0 32px; }
       <p class="lead reveal in">Second-year Information Science Engineering student focused on backend development and distributed systems. I like turning algorithms — graphs, trees, optimization — into real, working software, and I'm currently deep in Django, REST APIs, and data structures.</p>
       <div class="hero-ctas reveal in">
         <a href="#projects" class="btn btn-ghost">View Projects</a>
-        <a href="Manjunath_Resume.pdf" download class="btn btn-ghost">Download Resume</a>
+        <a href="My_Resume.pdf" download class="btn btn-ghost">Download Resume</a>
         <a href="mailto:manjunath0419@gmail.com" class="btn btn-ghost">Contact Me</a>
         <a href="#certifications" class="btn btn-ghost">Certifications</a>
       </div>
@@ -600,11 +600,11 @@ footer{ border-top:1px solid var(--border); padding:56px 0 32px; }
       <div class="resume-left">
         <div class="resume-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6M9 9h1"/></svg></div>
         <div>
-          <h3>Manjunath — Resume.pdf</h3>
+          <h3>My_Resume.pdf</h3>
           <p>UPDATED JULY 2026 · 1 PAGE</p>
         </div>
       </div>
-      <a href="Manjunath_Resume.pdf" download class="btn btn-primary" id="resumeBtn">
+      <a href="My_Resume.pdf" download class="btn btn-primary" id="resumeBtn">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
         Download Resume
       </a>
@@ -971,8 +971,8 @@ form.addEventListener('submit', (e)=>{
 /* ---------------- Resume download (placeholder) ---------------- */
 document.getElementById('resumeBtn').addEventListener('click', () => {
     const link = document.createElement('a');
-    link.href = 'Manjunath_Resume.pdf';
-    link.download = 'Manjunath_Resume.pdf';
+    link.href = 'My_Resume.pdf'; // Replace with the actual path to your resume file
+    link.download = 'My_Resume.pdf';
     link.click();
 });
 
